@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #1b1b1b;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #06dee1;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #06dee1;
+  background: rgb(39, 37, 37);
+}
+nav ul li a
+{
+  background: rgba(0, 0, 0, 0);
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+    position: fixed;
+  }
+}
+@media (max-width: 920px) {
+  #insta
+{
+ width: 25%;
+ align-items: center;
+ background-color: black;
+ float: none;
+ margin-left: 5%;
+ text-align: center;
+ height: 500px;
+}
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+}
+
+nav
+{
+  position: fixed;
+  
+}
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: blue rgba(255, 255, 255, 0);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 6px;
+}
+#particles-js
+{
+    background-color: rgb(10, 10, 10);
+  
+    width: 100%; height: 625px; pointer-events: initial;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #ffffff00;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+          background:linear-gradient(
+45deg,
+#1b1b1b,
+#1b1b1b
+
+    );
+    background-color: #1b1b1b;
+    border-radius: 10px;
+  }
+  .dokunma
+  {
+    position: absolute;
+    top: 13%;
+    width: 100%; height: 544px; pointer-events: initial;
+    background-color: #06dde100;
+  }
+  .dokunma .h1
+  {
+    color: white;
+    margin-top: 12%;
+    margin-left: 5%;
+  }
+  .dokunma .h1 p
+  {
+    color: #06dee1;
+    float: left;
+  }
+  .dokunma .ad
+  {
+    margin-left: 5%;
+    color: white;
+    float: left;
+    font-size: 450%;
+  }
+  
+.container {
+color: #06dee1;
+padding-top: 8%;
+padding-left: 5%;
+}
+
+
+/* Cursor */
+.txt-type > .txt {
+  border-right: 0.2rem solid #06dee1;
+}
+.iletişim button
+{
+  align-items: center;
+  border-radius: 15px;
+  background-color: rgb(39, 37, 37);
+  width: 200px;
+  border: none;
+  height: 50px;
+  color: white;
+  margin-left: 5%;
+  margin-top: 3%;
+}
+.resimim
+{
+  width: 30%;
+  border-radius: 30px;
+  float: right;
+  margin-top: -20%;
+  margin-right: 5%;
+}
+.aboutme
+{
+  width: 100%; height: 620px; 
+}
+.aboutme #hey h1
+{
+  float: right;
+  color:rgb(24, 23, 23);
+  width: 700px;
+  margin-top: 12%;
+  margin-left: 0%;
+  font-weight: 400;
+}
+.aboutme #hey img
+{
+  
+  width: 30%;
+  border-radius: 50%;
+  margin-top: 10%;
+}
+#hey
+{
+  width: 100%; height: auto;
+  background-color: #06dde100; 
+}
+.yapabileceklerim
+{
+  width: 100%; height: auto; 
+  background-color: rgb(0, 0, 0);
+  align-items: center;
+}
+.yapabileceklerim #yap
+{
+  align-items: center;
+  margin-left: 10%;
+  width: 75%;
+  background-color: #1b1b1b;
+  border-radius: 30px;
+  margin-top: 6%;
+  
+}
+.yapabileceklerim #yap img
+{
+  width: 165px;
+  align-items: center;
+  margin-left: 2%;
+  padding-left: 5%;
+}
+.yapabileceklerim h1
+{
+  align-items: center;
+  color: white;
+  margin-left: 35%;
+}
+.yapabileceklerim #yap:hover
+{
+  box-shadow: -2px -2px 8px  #06dee1,
+  -2px -2px 12px  #06dde19d,
+  inset 2px 2px 4px  #06dde134,
+  2px 2px 8px  #06dee1;
+  align-items: center;
+  margin-left: 10%;
+  width: 75%;
+  background-color: #1b1b1b;
+  transition: all 1.0s ease;
+}
+#boş 
+{
+  color: black;
+  margin-top: 6.50%;
+}
+.my
+{
+  width: 100%; height: 200px; 
+}
+.my h1
+{
+  color: #000000;
+  align-items: center;
+  margin-left: 42%;
+  margin-top: 5%;
+}
+#calışmam
+{
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+}
+#insta
+{
+ width: 25%;
+ align-items: center;
+ background-color: black;
+ float: left;
+ margin-left: 5%;
+ margin-top: 5%;
+ text-align: center;
+ height: 500px;
+}
+#insta img
+{
+  width: 100%;
+}
+#insta h1
+{
+  align-items: center;
+  font-size: 130%;
+  margin-left: 9%;
+  color: white;
+}
+#insta h2
+{
+  color: #fff;
+  margin-left: 0%;
+}
+
+@media screen and (max-width: 920px) {
+  #şirket
+{
+  text-align: center;
+  float: none;
+  margin-top: 10%;
+  width: 30%;
+  height: 250px;
+  border-radius: 30px;
+  border: solid #21252500;
+  background-color: #1b1b1b;
+  margin-left: 3%;
+}
+  #insta
+  {
+   width: 100%;
+   align-items: center;
+   background-color: black;
+   float: none;
+   margin-left: 0%;
+   text-align: center;
+   height: 700px;
+  }
+  #particles-js
+{
+    background-color: rgb(10, 10, 10);
+  
+    width: 100%; height: 825px; pointer-events: initial;
+}
+.resimim
+{
+  width: 30%;
+  border-radius: 30px;
+  float: right;
+  margin-top: -10%;
+  margin-right: 5%;
+}
+.iletişim button
+{
+  align-items: center;
+  border-radius: 15px;
+  background-color: rgb(39, 37, 37);
+  width: 350px;
+  border: none;
+  height: 75px;
+  color: white;
+  margin-left: 5%;
+  margin-top: 10%;
+}
+.container {
+  color: #06dee1;
+  padding-top: 35%;
+  padding-left: 5%;
+  }
+  .dokunma .ad
+  {
+    margin-left: 5%;
+    color: white;
+    float: left;
+    font-size: 450%;
+    padding-top: 20%;
+  }
+  .aboutme #hey h1
+{
+  float: none;
+  color:rgb(24, 23, 23);
+  width: 100%;
+  margin-top: 12%;
+  margin-left: 0%;
+  font-weight: 400;
+}
+.aboutme
+{
+  width: 100%;
+  height: 1050px;
+}
+.aboutme #hey img
+{
+  
+  width: 60%;
+  border-radius: 50%;
+  margin-top: 10%;
+}
+.yapabileceklerim h1
+{
+  margin-left: 10%;
+  color: white;
+  
+}
+
+}
+.servisss
+{
+  width: 100%;
+  height: 650px;
+  background-color: #000000;
+}
+#ya
+{
+background-color: #000000;
+margin-top: 40%;
+width: 100%;
+color: white;
+}
+#ya h1
+{
+  color: white;
+  padding-left: 35%;
+}
+#şirket
+{
+  text-align: center;
+  float: left;
+  margin-top: 10%;
+  width: 30%;
+  height: 250px;
+  border-radius: 30px;
+  border: solid #21252500;
+  background-color: #1b1b1b;
+  margin-left: 3%;
+}
+#şirket:hover
+{
+  background-color: #202bce;
+  transition: all 3.0s ease;
+}
+@media screen and (max-width: 920px) {
+  #şirket
+  {
+    text-align: center;
+    float: none;
+    margin-top: 10%;
+    width: 90%;
+    height: 250px;
+    border-radius: 30px;
+    border: solid #21252500;
+    background-color: #1b1b1b;
+    margin-left: 3%;
+  }
+}
+.iletişim
+{
+  width: 100%;
+  height: 650px;
+  
+}
+section {
+  height: 100vh;
+  width: 100%;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.containerr {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px #00000010;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.form-group {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid rgba(128, 128, 128, 0.199);
+  margin-top: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+button[type="submit"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 8px;
+  font-family: "Montserrat";
+  color: rgb(27, 166, 247);
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease background-color;
+}
+button[type="submit"]:hover {
+  background-color: rgb(214, 226, 236);
+}
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+#status.success {
+  background-color: rgb(211, 250, 153);
+  animation: status 4s ease forwards;
+}
+#status.error {
+  background-color: rgb(250, 129, 92);
+  color: white;
+  animation: status 4s ease forwards;
+}
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+@media screen and (max-width: 920px) {
+  .resimim
+  {
+    width: 70%;
+    border-radius: 30px;
+    float: right;
+    margin-top: 25%;
+    margin-right: 5%;
+  }
+  .container {
+    color: #06dee1;
+    position: absolute;
+    top: 30%;
+    }
+    #particles-js
+{
+    background-color: rgb(10, 10, 10);
+  
+    width: 100%; height: 925px; pointer-events: initial;
+}
+.servisss
+{
+  width: 100%;
+  height: 950px;
+  background-color: #000000;
+}
+}
